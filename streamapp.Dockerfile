@@ -12,6 +12,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 RUN pip install opencv-python
+RUN pip install opencv-python==4.2.0.32
+
 
 # Copy your Streamlit app code into the container
 COPY . /app

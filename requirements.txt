@@ -17,7 +17,7 @@ opencv-python
 streamlit-metrics
 transformers
 streamlit-drawable-canvas
-
+numpy opencv-python-headless
 
 # Plotting ------------------------------------
 pandas>=1.1.4
@@ -30,6 +30,4 @@ psutil  # system utilization
 thop  # FLOPs computation
 streamlit
 wget
-pip install opencv-python opencv-python-headless
-pip install opencv-python-headless
-pip install opencv-contrib-python
+numpy opencv-python-headless

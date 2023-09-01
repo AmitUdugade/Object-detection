@@ -31,3 +31,5 @@ thop  # FLOPs computation
 streamlit
 wget
 pip install opencv-python opencv-python-headless
+pip install opencv-python-headless
+pip install opencv-contrib-python

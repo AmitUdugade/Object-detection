@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y libgl1-mesa-glx
 # Install required Python packages
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+pip install opencv-python opencv-python-headless
 
 # Copy your Streamlit app code into the container
 COPY . /app
@@ -22,4 +23,3 @@ CMD ["streamlit", "run", "main.py"]
 
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
-pip install opencv-python opencv-python-headless

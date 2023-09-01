@@ -19,3 +19,5 @@ EXPOSE 8501
 
 # Command to run your Streamlit app
 CMD ["streamlit", "run", "main.py"]
+
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y

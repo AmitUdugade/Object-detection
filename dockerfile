@@ -12,6 +12,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install opencv-python opencv-python-headless
 RUN pip install opencv-python
+RUN pip install opencv-python streamlit Pillow
 
 # Copy your Streamlit app code into the container
 COPY . /app

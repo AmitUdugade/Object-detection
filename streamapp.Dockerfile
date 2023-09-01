@@ -22,3 +22,4 @@ CMD ["streamlit", "run", "main.py"]
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 pip install opencv-python opencv-python-headless
+pip install opencv-python

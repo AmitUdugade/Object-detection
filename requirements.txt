@@ -30,3 +30,4 @@ psutil  # system utilization
 thop  # FLOPs computation
 streamlit
 wget
+pip install opencv-python opencv-python-headless

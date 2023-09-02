@@ -165,7 +165,7 @@ def main():
     
 
     # upload model
-    model_src = st.sidebar.radio("Select weight file", ["Custom model", "YOLO"])
+    model_src = st.sidebar.radio("Select task", ["Detection", "Recongnition"])
     # URL, upload file (max 200 mb)
     if model_src == "Use your own model":
         user_model_path = get_user_model()

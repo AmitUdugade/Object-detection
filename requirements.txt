@@ -4,14 +4,10 @@
 # Base ----------------------------------------
 --upgrade pip
 wget
-numpy>=1.18.5
-Pillow>=7.1.2
+numpy
+Pillow
 opencv-python-headless
-
-
-# Plotting ------------------------------------
-
-# Extras --------------------------------------
+opencv-python
 
 
 

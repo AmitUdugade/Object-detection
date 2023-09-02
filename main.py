@@ -54,7 +54,7 @@ def video_input(data_src):
                 out.write(vid_bytes.read())
 
     if vid_file:
-   #     cap = cv2.VideoCapture(vid_file)
+       cap = cv2.VideoCapture(-1)
         custom_size = st.sidebar.checkbox("Custom frame size")
         width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))

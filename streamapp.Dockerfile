@@ -6,6 +6,9 @@ WORKDIR /app
 
 # Install system-level dependencies for OpenCV
 RUN apt-get update && apt-get install -y libgl1-mesa-glx
+RUN pip install opencv-python-headless
+RUN pip install opencv-contrib-python --upgrade  
+RUN pip install opencv-python
 
 # Install required Python packages
 COPY requirements.txt .

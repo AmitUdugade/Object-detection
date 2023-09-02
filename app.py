@@ -24,7 +24,7 @@ def image_input(data_src):
     else:
         img_bytes = st.sidebar.file_uploader("Upload an image", type=['png', 'jpeg', 'jpg'])
         if img_bytes:
-            img_file = "data/uploaded_data/upload." + img_bytes.name.split('.')[-1]
+            img_file = "data/uploaded_data/upload" + img_bytes.name.split('.')[-1]
             Image.open(img_bytes).save(img_file)
 
     if img_file:

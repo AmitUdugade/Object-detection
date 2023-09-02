@@ -155,7 +155,7 @@ def main():
     # global variables
     global model, confidence, cfg_model_path
 
-    st.title("Object Detection Webapp - Amtswrld")
+    st.title("Object Detection Webapp - Amitsworld")
 
     st.sidebar.title("Custom settings")
 
